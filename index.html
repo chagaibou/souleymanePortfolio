@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Graphiste | Créations Visuelles Uniques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-2xl font-bold text-indigo-700">SMM</a>
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="#accueil"
+              class="text-indigo-600 font-medium hover:text-indigo-800"
+              >Accueil</a
+            >
+            <a href="#competences" class="text-gray-600 hover:text-indigo-800"
+              >Compétences</a
+            >
+            <a href="#portfolio" class="text-gray-600 hover:text-indigo-800"
+              >Portfolio</a
+            >
+            <a href="#apropos" class="text-gray-600 hover:text-indigo-800"
+              >À propos</a
+            >
+            <a href="#contact" class="text-gray-600 hover:text-indigo-800"
+              >Contact</a
+            >
+          </nav>
+          <button id="mobile-menu-button" class="md:hidden text-gray-600">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+          <div
+            id="mobile-menu"
+            class="hidden md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg py-4 px-6"
+          >
+            <div class="flex flex-col space-y-4">
+              <a
+                href="#accueil"
+                class="text-indigo-600 font-medium hover:text-indigo-800"
+                >Accueil</a 
+              >
+              <a href="#competences" class="text-gray-600 hover:text-indigo-800"
+                >Competences</a Competences
+              > 
+              <a href="#portfolio" class="text-gray-600 hover:text-indigo-800"
+                >Portfolio</a Portfolio
+              >
+              <a href="#apropos" class="text-gray-600 hover:text-indigo-800"
+                >À propos</a
+              >
+              <a href="#contact" class="text-gray-600 hover:text-indigo-800"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="pt-32 pb-20 gradient-bg text-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 animate-fadeIn">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+              Je suis <span class="text-yellow-300">Souleymane M Maiga</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">
+              Graphiste Designer
+            </h2>
+            <p class="text-lg mb-8 opacity-90">
+              Mon expertise en création de logos, d'identités visuelles et de supports de communication m'aide à
+               concevoir des concepts uniques, tout en véhiculant des messages clairs et impactants. Faites passer 
+               votre projet à un autre niveau avec des designs qui marquent les esprits.
+
+ 
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#portfolio"
+                class="px-6 py-3 bg-white text-indigo-700 font-semibold rounded-lg hover:bg-gray-100 transition duration-300"
+                >Voir mon travail</a
+              >
+              <a
+                href="#contact"
+                class="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-indigo-700 transition duration-300"
+                >Me contacter</a
+              >
+            </div>
+          </div>
+          <div
+            class="md:w-1/2 flex justify-center animate-fadeIn"
+            style="animation-delay: 0.3s"
+          >
+            <div class="relative">
+              <div
+                class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                  alt="Graphiste"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                class="absolute -bottom-5 -right-5 bg-yellow-400 text-indigo-800 px-4 py-2 rounded-lg font-bold shadow-lg"
+              >
+                <span class="block text-sm">3+ ans</span>
+                <span class="block">d'expérience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 animate-fadeIn">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-indigo-800">
+            Mes Compétences
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Voici les domaines dans lesquels j'excelle en tant que graphiste
+            professionnel.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Création de Logo et Identité Visuelle -->
+          <div
+            class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 project-item animate-fadeIn"
+            style="animation-delay: 0.2s"
+          >
+            <div class="text-indigo-600 mb-4">
+              <i class="fas fa-palette text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">
+              Création de Logo et Identité Visuelle
+            </h3>
+            <p class="text-gray-600">
+              Création de logos, chartes graphiques et systèmes d'identité
+              visuelle cohérents.
+            </p>
+          </div>
+
+          <!-- Création de Supports Print et Digital -->
+          <div
+            class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 project-item animate-fadeIn"
+            style="animation-delay: 0.4s"
+          >
+            <div class="text-indigo-600 mb-4">
+              <i class="fas fa-magic text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">
+              Création de Supports Print et Digital
+            </h3>
+            <p class="text-gray-600">
+              flyers, affiches, brochures, packaging, badges, banderoles,
+              kakemono, calendriers, livrets, couvertures, plaques, factures,
+              reçus, tickets, etc.
+            </p>
+          </div>
+
+          <!-- Retouches et Compositions Visuelles -->
+          <div
+            class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 project-item animate-fadeIn"
+            style="animation-delay: 0.6s"
+          >
+            <div class="text-indigo-600 mb-4">
+              <i class="fas fa-camera-retro text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">
+              Retouches et Compositions Visuelles
+            </h3>
+            <p class="text-gray-600">
+              Retouches professionnelles et compositions créatives pour vos
+              images et supports visuels.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 text-center animate-fadeIn"
+          style="animation-delay: 1s"
+        >
+          <h3 class="text-xl font-semibold mb-6">Outils que j'utilise</h3>
+          <div class="flex flex-wrap justify-center gap-6 md:gap-10">
+            <div class="flex flex-col items-center">
+              <img
+                src="./images/premiere.png"
+                alt="Photoshop"
+                class="w-16 h-16 mb-2"
+              />
+              <span class="text-gray-600">Premier Pro</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="./images/photoshop.png"
+                alt="Blender"
+                class="w-16 h-16 mb-2"
+              />
+              <span class="text-gray-600">Photoshop</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="./images/indesign.png"
+                alt="After Effects"
+                class="w-16 h-16 mb-2"
+              />
+              <span class="text-gray-600">Adobe InDesign</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 animate-fadeIn">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-indigo-800">
+            Mes Réalisations
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Découvrez une sélection de mes derniers projets créatifs.
+          </p>
+          <div class="mt-6 flex justify-center space-x-4">
+            <button
+              class="px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-lg"
+              data-filter="all"
+              id="filter-all"
+
+            >
+              Tous
+            </button>
+            <button
+              class="px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-lg"
+              data-filter="logo"
+            >
+              Logos
+            </button>
+            <button
+              class="px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-lg"
+              data-filter="print"
+            >
+              Print
+            </button>
+            <button
+              class="px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-lg"
+              data-filter="uiux"
+            >
+              UI/UX
+            </button>
+          </div>
+        </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8" id="portfolio-items">
+      <!-- Portfolio Item 1 - Logo -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 project-item logo animate-fadeIn">
+        <div class="p-6">
+          <div class="flex justify-between items-start">
+            <div class="text-center">
+              <!-- Fixer la taille de l'image -->
+              <img src="./logos/jcmc.jpeg" alt="Logo JCMC" class="w-full h-48 object-cover mb-4">
+              <h3 class="text-xl font-bold mb-2">Logo pour les jeunes citoyens modèles pour la communauté</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Item 2 - Logo -->
+       <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 project-item logo animate-fadeIn">
+        <div class="p-6">
+          <div class="flex justify-between items-start">
+            <div class="text-center">
+              <!-- Fixer la taille de l'image -->
+              <img src="./logos/darjah.jpeg" alt="Logo Darjah" class="w-full h-48 object-cover mb-4">
+              <h3 class="text-xl text-center font-bold mb-2">Logo pour Darjah</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Item 3 - Logo -->
+       <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 project-item logo animate-fadeIn">
+        <div class="p-6">
+          <div class="flex justify-between items-start">
+            <div class="text-center">
+              <!-- Fixer la taille de l'image -->
+              <img src="./logos/ong-nema.jpeg" alt="Logo nema" class="w-full h-48 object-cover mb-4">
+              <h3 class="text-xl font-bold mb-2">Logo pour l'ONG Nema-Developpement</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Item 4 - Logo -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 project-item logo animate-fadeIn">
+        <div class="p-6">
+          <div class="flex justify-between items-start">
+            <div class="text-center">
+              <!-- Fixer la taille de l'image -->
+              <img src="./logos/agri solution.jpeg" alt="Logo agri" class="w-full h-48 object-cover mb-4">
+              <h3 class="text-xl font-bold mb-2">Logo pour Agri solution</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Item 5 - Logo -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 project-item logo animate-fadeIn">
+        <div class="p-6">
+          <div class="flex justify-between items-start">
+            <div class="text-center">
+              <!-- Fixer la taille de l'image -->
+              <img src="./logos/tenaci-energy.jpeg" alt="Logo pour tenacy" class="w-full h-48 object-cover mb-4">
+              <h3 class="text-xl font-bold mb-2">Logo pour Tenacy Energy</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 animate-fadeIn">
+            <img
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+              alt="À propos"
+              class="rounded-xl shadow-lg w-full"
+            />
+          </div>
+          <div
+            class="md:w-1/2 md:pl-12 animate-fadeIn"
+            style="animation-delay: 0.3s"
+          >
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-indigo-800">
+              À propos de moi
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+            je suis passionné par la création de designs graphiques et de supports de 
+            communication. Mon amour pour ce domaine m'a poussé à la recherche de nouvelles 
+            solutions créatives afin de mieux répondre aux besoins de la clientèle. De ma part 
+            mon expérience, j'ai eu à travailler 
+            sur différents dont j'ai le plaisir de partager avec vous.
+            </p>
+
+            <div class="mb-8">
+              <h3 class="text-xl font-bold mb-4 text-gray-800">Mon parcours</h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div
+                    class="bg-indigo-100 text-indigo-800 rounded-full p-2 mr-4 mt-1"
+                  >
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Licence en Administration Système et <br/>
+                      de Base de Données
+                    </h4>
+                    <p class="text-gray-600">
+                      Université du Sahel
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="bg-indigo-100 text-indigo-800 rounded-full p-2 mr-4 mt-1"
+                  >
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">
+                      Graphiste à L'Institut de développement<br/>
+                       des secteurs
+                    </h4>
+                    <p class="text-gray-600">4 ans</p>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+
+            <a
+              href="./moncv.jpg"
+              target="_blank" 
+              class="inline-block px-6 py-3 border-2 
+              border-indigo-600 text-indigo-600 font-semibold
+               rounded-lg hover:bg-indigo-600 hover:text-white transition duration-300"
+            >
+              <i class="fas fa-download mr-2"></i> voir mon CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Témoignages -->
+    <!-- <section class="py-20 gradient-bg text-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 animate-fadeIn">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Ce qu'ils disent de moi
+          </h2>
+          <p class="text-lg opacity-90 max-w-2xl mx-auto">
+            Les retours de mes clients et collaborateurs sur mon travail.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+          <div
+            class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm project-item animate-fadeIn"
+            style="animation-delay: 0.2s"
+          >
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://randomuser.me/api/portraits/women/32.jpg"
+                  alt="Client"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold">Sophie Martin</h4>
+                <p class="text-sm opacity-80">Directrice Marketing</p>
+              </div>
+            </div>
+            <p class="italic">
+              "Jean a transformé notre identité visuelle avec une créativité
+              remarquable. Ses designs ont grandement contribué à notre
+              rebranding réussi."
+            </p>
+            <div class="mt-4 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+     
+          <div
+            class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm project-item animate-fadeIn"
+            style="animation-delay: 0.4s"
+          >
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://randomuser.me/api/portraits/men/44.jpg"
+                  alt="Client"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold">Pierre Lambert</h4>
+                <p class="text-sm opacity-80">Fondateur Startup</p>
+              </div>
+            </div>
+            <p class="italic">
+              "Le design de notre application mobile par Jean a parfaitement
+              capté notre vision. L'interface est à la fois belle et intuitive
+              pour nos utilisateurs."
+            </p>
+            <div class="mt-4 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+         
+          <div
+            class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm project-item animate-fadeIn"
+            style="animation-delay: 0.6s"
+          >
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://randomuser.me/api/portraits/women/68.jpg"
+                  alt="Client"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold">Emma Dubois</h4>
+                <p class="text-sm opacity-80">Responsable Communication</p>
+              </div>
+            </div>
+            <p class="italic">
+              "Travailler avec Jean a été un plaisir. Professionnel, à l'écoute
+              et rapide dans ses réalisations. Je recommande vivement ses
+              services !"
+            </p>
+            <div class="mt-4 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Contact -->
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row">
+          <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">
+              Contactez-nous
+            </h2>
+            <p class="text-gray-600 mb-8">
+              Vous avez une question ou souhaitez obtenir un devis ? Remplissez
+              le formulaire ou contactez-nous directement.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600"
+                  >
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-800">Adresse</h3>
+                  <p class="mt-1 text-gray-600">
+                    Baco Djocoroni Golf - Bamako/Mali
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600"
+                  >
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-800">Téléphone</h3>
+                  <p class="mt-1 text-gray-600">+223 71 93 20 30</p>
+                  <p class="mt-1 text-gray-600">+223 97 67 93 76</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-800">Email</h3>
+                  <p class="mt-1 text-gray-600">souley0369@gmail.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12">
+              <h3 class="text-lg font-medium text-gray-800 mb-4">
+                Suivez-nous
+              </h3>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="h-10 w-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-200"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="h-10 w-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-200"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="h-10 w-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-200"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="#"
+                  class="h-10 w-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-200"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">
+              Envoyer un message
+            </h2>
+            <form class="bg-gray-50 p-8 rounded-lg shadow-md">
+              <div class="mb-6">
+                <label for="name" class="block text-gray-700 font-medium mb-2"
+                  >Nom complet</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Votre nom"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 font-medium mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Votre email"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label for="phone" class="block text-gray-700 font-medium mb-2"
+                  >Téléphone</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Votre numéro"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="subject"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Sujet</label
+                >
+                <select
+                  id="subject"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                >
+                  <option value="">Sélectionnez un sujet</option>
+                  <option value="website">Création de site web</option>
+                  <option value="mobile">Application mobile</option>
+                  <option value="mobile">Infographie</option>
+                  <option value="formation">Formation</option>
+                  <option value="data">Analyse de données</option>
+                  <option value="mobile">Etude de marché</option>
+                  <option value="other">Autre</option>
+                </select>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Votre message"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Envoyer le message <i class="fas fa-paper-plane ml-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <a href="#" class="text-2xl font-bold text-white">SMM</a>
+            <p class="mt-2 text-gray-400">
+              Créations graphiques sur mesure 
+            </p>
+          </div>
+
+          <div class="mb-6 md:mb-0">
+            <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#accueil" class="hover:text-white transition"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a href="#competences" class="hover:text-white transition"
+                  >Compétences</a
+                >
+              </li>
+              <li>
+                <a href="#portfolio" class="hover:text-white transition"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#apropos" class="hover:text-white transition"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6 md:mb-0">
+            <h4 class="text-lg font-semibold mb-4">Réseaux sociaux</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-indigo-600 transition"
+              >
+                <i class="fab fa-behance"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-600 transition"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-pink-600 transition"
+              >
+                <i class="fab fa-dribbble"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-500 transition"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+         
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500"
+        >
+          <p>© 2025 Souleymane M Maiga - Graphiste. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js">
+          </script>
+  </body>
+</html>

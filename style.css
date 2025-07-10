@@ -1,0 +1,43 @@
+/* Animation pour les éléments */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Gradient personnalisé */
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Effet de survol pour les projets */
+.project-item {
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Classe pour le bouton "Tous" lorsqu'il est actif */
+.active-button {
+  background-color: skyblue; /* Couleur active pour le bouton */
+  color: white; /* Couleur du texte active */
+}
+
+/* Classe pour le bouton "Tous" inactif */
+.inactive-button {
+  background-color: white; /* Couleur de fond par défaut */
+  color: black;
+  border: 1px solid #4c51bf; /* Bordure active mais claire */
+}
